@@ -1,0 +1,26 @@
+# Exported from Render on 2024-08-07T04:02:00Z
+services:
+- type: web
+  name: instaClone
+  runtime: node
+  repo: https://github.com/zinzalasagar/instaClone
+  plan: free
+  envVars:
+  - key: API_SECRET
+    sync: false
+  - key: API_KEY
+    sync: false
+  - key: CLOUD_NAME
+    sync: false
+  - key: SECRET_KEY
+    sync: false
+  - key: URL
+    sync: false
+  - key: MONGO_URL
+    sync: false
+  - key: PORT
+    sync: false
+  region: oregon
+  buildCommand: npm run build
+  startCommand: npm run start
+version: "1"
